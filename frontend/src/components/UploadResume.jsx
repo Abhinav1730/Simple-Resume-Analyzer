@@ -98,7 +98,7 @@ function UploadResume() {
               </h3>
               <div className="flex justify-center">
                 <img
-                  src={`https://simple-resume-analyzer-backand.onrender.com/static/plots/job_match.png${data.plot}`}
+                  src={`https://simple-resume-analyzer-backand.onrender.com${data.plot}`}
                   alt="Skill Match Plot"
                   className="rounded-lg shadow-lg w-full max-w-xl"
                 />

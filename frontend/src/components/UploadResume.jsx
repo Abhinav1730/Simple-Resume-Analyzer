@@ -14,7 +14,7 @@ function UploadResume() {
 
     setLoading(true);
     try {
-      const res = await axios.post("https://simple-resume-analyzer.vercel.app/", formData);
+      const res = await axios.post("https://simple-resume-analyzer-backand.onrender.com", formData);
       setData(res.data);
     } catch (error) {
       console.error(error);

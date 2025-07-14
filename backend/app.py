@@ -22,12 +22,12 @@ def upload_resume():
         # fallback for .txt or other plain text formats
         resume_text = file.read().decode("utf-8", errors="ignore")
 
-    # print("🔍 Extracted Resume Text:", resume_text[:300])
+    print("🔍 Extracted Resume Text:", resume_text[:300])
 
     skills, plot_path = process_resume(resume_text)
     jobs = get_job_matches(skills)
 
-    # print({"skills": skills, "plot": plot_path, "jobs": jobs})
+    print({"skills": skills, "plot": plot_path, "jobs": jobs})
     return jsonify({"skills": skills, "plot": plot_path, "jobs": jobs})
 
 
